@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         searchButton.setOnClickListener {
             Log.v(TAG, "Clicked!")
 
-            val url = "http://dinoipsum.herkuapp.com/api/?format=text&words=20&paragraphs=1"
+            val url = "http://dinoipsum.herokuapp.com/api/?format=text&words=20&paragraphs=1"
 
             val requests = StringRequest(Request.Method.GET, url,
                     Response.Listener<String> {
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         val listView = findViewById<ListView>(R.id.list_view)
         listView.setOnItemClickListener { parent, view, position, id ->
             val stringClicked = parent.getItemAtPosition(position)
-            Toast.makeText(this, "you clicked $stringClicked", Toast.LENGTH_SHORT)
+            Toast.makeText(this, "you clicked $stringClicked", Toast.LENGTH_SHORT).show()
 
         }
         listView.adapter = adapter
