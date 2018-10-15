@@ -26,30 +26,9 @@
             android:hint="Enter a search term..."
             />
 
-        <com.android.volley.toolbox.NetworkImageView
-            android:id="@+id/img_remote"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp" />
-
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/list_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    </ListView>
 
-    <!--<GridView-->
-    <!--android:id="@+id/list_view"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:columnWidth="90dp"-->
-    <!--android:numColumns="auto_fit"-->
-    <!--android:verticalSpacing="10dp"-->
-    <!--android:horizontalSpacing="10dp"-->
-    <!-->-->
-    <!--</GridView>-->
 
 
 </LinearLayout>
